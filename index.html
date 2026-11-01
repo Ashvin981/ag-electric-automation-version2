@@ -1532,7 +1532,27 @@
 @media (prefers-reduced-motion: reduce) {
   #home .hero-visual-note, #about .about-story-image img { transition: none !important; }
 }
-</style></head>
+</style>
+<style id="ag-electric-hero-image-refinement">
+  /* Hero-only image presentation. No non-hero components are targeted. */
+  #home .hero-photo-main { background: #e7e5e4; }
+  #home .hero-photo-lighting { background: #d6d3d1; }
+  #home .hero-photo-interior { background: #e2e8f0; }
+  #home .hero-photo-main img,
+  #home .hero-photo-lighting img,
+  #home .hero-photo-interior img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .65s cubic-bezier(.2,.8,.2,1);
+  }
+  #home .hero-photo-main img { object-position: center 54%; }
+  #home .hero-photo-lighting img { object-position: center 44%; }
+  #home .hero-photo-interior img { object-position: center 50%; }
+</style>
+
+</head>
 <body class="bg-white antialiased">
 <!-- ============ HEADER ============ -->
 <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="site-header" style="background:#FFFFFF; box-shadow:0 1px 0 rgba(15,23,42,.08);">
@@ -1593,9 +1613,9 @@
 </div>
 <div aria-label="Electrical product categories" class="hero-visual relative">
 <div class="hero-photo-grid">
-<a class="hero-photo hero-photo-main group" href="#featured-products"><img alt="Electrician working on an electrical installation" decoding="async" fetchpriority="high" loading="lazy" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"/><span class="hero-photo-label"><strong>Electrical solutions</strong><small>For every kind of project</small></span></a>
-<a class="hero-photo hero-photo-small hero-photo-lighting" href="#featured-products"><img alt="Warm architectural lighting in a modern interior" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&amp;fit=crop&amp;w=700&amp;q=82"/><span class="hero-photo-chip">Lighting</span></a>
-<a class="hero-photo hero-photo-small hero-photo-interior" href="#featured-products"><img alt="Modern interior with carefully designed lighting" decoding="async" loading="lazy" src="https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&amp;fit=crop&amp;w=700&amp;q=82"/><span class="hero-photo-chip">Home solutions</span></a>
+<a class="hero-photo hero-photo-main group" href="#featured-products"><img fetchpriority="high" loading="eager" alt="Modern living room with layered architectural and decorative lighting" decoding="async" src="https://images.pexels.com/photos/34377945/pexels-photo-34377945/free-photo-of-modern-living-room-with-elegant-lighting.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400"/ onerror="if(!this.dataset.heroFallback){this.dataset.heroFallback='1';this.src='https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1100&q=85';}else{this.onerror=null;this.style.display='none';}"><span class="hero-photo-label"><strong>Electrical solutions</strong><small>For every kind of project</small></span></a>
+<a class="hero-photo hero-photo-small hero-photo-lighting" href="#featured-products"><img loading="lazy" alt="Modern interior with sculptural pendant lighting and warm illumination" decoding="async" src="https://images.pexels.com/photos/31737855/pexels-photo-31737855/free-photo-of-modern-living-room-with-elegant-lighting-design.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"/ onerror="if(!this.dataset.heroFallback){this.dataset.heroFallback='1';this.src='https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=82';}else{this.onerror=null;this.style.display='none';}"><span class="hero-photo-chip">Lighting</span></a>
+<a class="hero-photo hero-photo-small hero-photo-interior" href="#featured-products"><img loading="lazy" alt="Close-up of a contemporary electrical wall switch and outlet" decoding="async" src="https://images.unsplash.com/photo-1761479373576-ad4c1c5bb9af?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/ onerror="if(!this.dataset.heroFallback){this.dataset.heroFallback='1';this.src='https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=700&q=82';}else{this.onerror=null;this.style.display='none';}"><span class="hero-photo-chip">Home solutions</span></a>
 <div class="hero-visual-note"><span class="hero-note-icon">✦</span><span><strong>Need help choosing?</strong><small>Talk to our team</small></span><a aria-label="Ask AG Electric on WhatsApp" href="https://wa.me/917830553388" rel="noopener" target="_blank">↗</a></div>
 </div>
 </div>
