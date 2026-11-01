@@ -27,7 +27,7 @@
   *{scroll-behavior:auto;}
   body{font-family:'Inter',sans-serif; color:var(--ink); background:var(--white); overflow-x:hidden;}
   h1,h2,h3,h4,.font-display{font-family:'Poppins',sans-serif;}
-  .eyebrow{font-family:'Inter',sans-serif; letter-spacing:.18em; text-transform:uppercase; font-size:.8rem; font-weight:600;}
+  .eyebrow{font-family:'Inter',sans-serif; letter-spacing:.16em; text-transform:uppercase; font-size:13px; font-weight:600;}
 
   /* Section flag styles for prominent sub-headings */
   .section-flag{display:inline-flex;align-items:center;gap:.8rem;padding:.45rem .9rem;border-radius:999px;border:1px solid rgba(14,20,33,.04);box-shadow:0 6px 20px -12px rgba(15,23,42,.06);}
@@ -38,10 +38,10 @@
   .section-flag--muted .tri-bullet{border-bottom-color:var(--blue);} 
   .section-flag{transition:transform .28s ease, box-shadow .28s ease;}
   .section-flag:hover{transform:translateY(-4px); box-shadow:0 18px 40px -18px rgba(2,6,23,.12);} 
-  .section-title{font-family:'Poppins',sans-serif;font-weight:800;letter-spacing:.06em;text-transform:none;font-size:18px;color:var(--navy); position:relative; display:inline-block; padding-bottom:6px}
+  .section-title{font-family:'Poppins',sans-serif;font-weight:800;letter-spacing:.035em;text-transform:none;font-size:20px;color:var(--navy); position:relative; display:inline-block; padding-bottom:6px}
   .section-title::after{content:'';position:absolute;left:50%;transform:translateX(-50%);bottom:-6px;width:54%;height:6px;border-radius:6px;background:linear-gradient(90deg,var(--red),#FF6B5B);opacity:.18}
   .section-title .accent{background:linear-gradient(90deg,var(--red),#FF6B5B);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .section-sub{margin-top:.6rem;font-size:15px;color:#51627a}
+  .section-sub{margin-top:.6rem;font-size:16px;line-height:1.6;color:#51627a}
 
   .feature-heading{
     display:block; margin-bottom:0.7rem; font-weight:800; font-family:'Poppins',sans-serif;
@@ -97,13 +97,13 @@
   /* image area style to make logos appear on a soft panel */
   .brand-chip .logo-wrap{background:var(--ice); height:76px; display:flex; align-items:center; justify-content:center; padding:14px}
   .brand-chip img{transition:transform .35s ease, opacity .25s ease; display:block; max-width:88%; max-height:52px; object-fit:contain}
-  .brand-name{font-size:11px !important; line-height:1.2 !important;}
-  .brand-badge{display:inline-flex; align-items:center; gap:.32rem; padding:.12rem .38rem; border-radius:999px; font-weight:700; font-size:9px}
+  .brand-name{font-size:12px !important; line-height:1.3 !important;}
+  .brand-badge{display:inline-flex; align-items:center; gap:.32rem; padding:.18rem .42rem; border-radius:999px; font-weight:700; font-size:10px}
 
   /* Normalize brand badge sizing and alignment so it doesn't overflow */
   .brand-badge{
     padding:4px 7px !important;
-    font-size:8.9px !important;
+    font-size:10px !important;
     gap:4px !important;
     height:18px;
     line-height:1;
@@ -263,7 +263,7 @@
   .product-tabs-scroll::-webkit-scrollbar{display:none;}
   .product-tab-btn{
     display:inline-flex; align-items:center; gap:9px; white-space:nowrap;
-    padding:10px 15px; border-radius:12px; font-size:13px; font-weight:700;
+    padding:10px 15px; border-radius:12px; font-size:14px; font-weight:700;
     border:1px solid #E2E8F0; background:#fff; color:#475569;
     transition:transform .25s ease, border-color .25s ease, background .25s ease, color .25s ease, box-shadow .25s ease;
     cursor:pointer; flex:0 0 auto; scroll-snap-align:start;
@@ -274,9 +274,9 @@
   .product-tab-btn.active .product-tab-icon{background:rgba(255,255,255,.12);color:#fff;}
   .product-tab-icon svg{width:17px;height:17px;}
   .product-tab-label{line-height:1.15;}
-  .product-tab-count{font-size:10px;min-width:22px;height:20px;padding:0 6px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;background:#F1F5F9;color:#64748B;}
+  .product-tab-count{font-size:11px;min-width:22px;height:20px;padding:0 6px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;background:#F1F5F9;color:#64748B;}
   .product-tab-btn.active .product-tab-count{background:rgba(255,255,255,.14);color:#fff;}
-  .product-tab-desc-wrap{display:flex;align-items:center;gap:12px;margin-top:13px;min-height:30px;}
+  .product-tab-desc-wrap{display:flex;align-items:center;gap:12px;margin-top:13px;min-height:30px;font-size:15px;line-height:1.5;}
   .product-tab-accent{width:4px;height:30px;border-radius:999px;background:linear-gradient(180deg,var(--red),#FF6B5B);flex:0 0 4px;}
   #product-tab-desc{margin:0;}
   .product-grid-viewport{position:relative;}
@@ -297,12 +297,12 @@
   .product-card-image img{width:82%;height:82%;object-fit:contain;display:block;position:relative;z-index:1;transition:transform .45s cubic-bezier(.2,.8,.2,1);}
   .product-card:hover .product-card-image img{transform:scale(1.08);}
   .product-card-image .product-fallback-icon{position:relative;z-index:1;width:56px;height:56px;border-radius:16px;background:rgba(198,40,40,.08);display:flex;align-items:center;justify-content:center;}
-  .product-card-badge{position:absolute;top:12px;left:12px;z-index:2;padding:5px 8px;border-radius:999px;background:#fff;border:1px solid #E2E8F0;color:#64748B;font-size:9px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;}
+  .product-card-badge{position:absolute;top:12px;left:12px;z-index:2;padding:5px 8px;border-radius:999px;background:#fff;border:1px solid #E2E8F0;color:#64748B;font-size:11px;font-weight:800;letter-spacing:.04em;text-transform:uppercase;}
   .product-card-body{padding:18px 18px 17px;display:flex;flex-direction:column;min-height:184px;}
-  .product-card-title{font-family:'Poppins',sans-serif;font-size:15px;font-weight:700;line-height:1.3;color:var(--navy);}
-  .product-card-desc{font-size:12.5px;line-height:1.55;color:#64748B;margin-top:7px;}
+  .product-card-title{font-family:'Poppins',sans-serif;font-size:17px;font-weight:700;line-height:1.35;color:var(--navy);}
+  .product-card-desc{font-size:15px;line-height:1.6;color:#526176;margin-top:8px;}
   .product-card-actions{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto;padding-top:15px;}
-  .product-explore{display:inline-flex;align-items:center;gap:5px;color:var(--red);font-size:12.5px;font-weight:800;}
+  .product-explore{display:inline-flex;align-items:center;gap:5px;color:var(--red);font-size:14px;font-weight:800;}
   .product-explore svg{transition:transform .25s ease;}
   .product-card:hover .product-explore svg{transform:translateX(4px);}
   .product-quote{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:9px;background:#F8FAFC;color:var(--navy);border:1px solid #E2E8F0;transition:all .25s ease;}
@@ -312,14 +312,14 @@
   #carousel-prev{left:-8px;}
   #carousel-next{right:-8px;}
   .product-carousel-btn svg{width:14px;height:14px;}
-  .product-scroll-hint{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:2px;color:#94A3B8;font-size:11px;}
+  .product-scroll-hint{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:2px;color:#64748B;font-size:13px;line-height:1.45;}
   .product-scroll-line{height:3px;border-radius:999px;background:#E2E8F0;overflow:hidden;flex:1;}
   .product-scroll-line span{display:block;height:100%;width:28%;border-radius:999px;background:#94A3B8;transition:transform .25s ease,width .25s ease;}
   .product-help-card{margin-top:26px;border:1px solid #E2E8F0;border-radius:18px;padding:18px 20px;background:linear-gradient(100deg,#F8FAFC,#fff);display:flex;align-items:center;justify-content:space-between;gap:20px;}
-  .product-help-title{font-family:'Poppins',sans-serif;font-weight:700;color:var(--navy);font-size:15px;}
-  .product-help-copy{font-size:12.5px;color:#64748B;margin-top:3px;}
+  .product-help-title{font-family:'Poppins',sans-serif;font-weight:700;color:var(--navy);font-size:17px;line-height:1.35;}
+  .product-help-copy{font-size:15px;line-height:1.55;color:#526176;margin-top:4px;}
   .product-help-actions{display:flex;align-items:center;gap:9px;flex:0 0 auto;}
-  .product-help-btn{display:inline-flex;align-items:center;gap:7px;padding:9px 13px;border-radius:9px;font-size:12px;font-weight:800;transition:all .25s ease;}
+  .product-help-btn{display:inline-flex;align-items:center;gap:7px;padding:10px 14px;border-radius:9px;font-size:14px;font-weight:800;transition:all .25s ease;}
   .product-help-btn.primary{background:var(--red);color:#fff;}
   .product-help-btn.primary:hover{background:var(--red-deep);transform:translateY(-2px);}
   .product-help-btn.secondary{background:#fff;color:var(--navy);border:1px solid #E2E8F0;}
@@ -469,68 +469,29 @@
   }
 
 
-  /* Refined desktop header at 80% page scale:
-     keep comfortable spacing while slightly reducing text size. */
-  @media (min-width:1024px){
-    #site-header .header-row{
-      height:4.5rem !important;
-      min-height:4.5rem !important;
-    }
-    #site-header #desktop-nav{
-      gap:1.35rem !important;
-      font-size:13px !important;
-      letter-spacing:-0.01em;
-    }
-    #site-header #desktop-nav .nav-link{
-      font-size:13px !important;
-    }
-    #site-header > .max-w-7xl{
-      padding-left:1.5rem !important;
-      padding-right:1.5rem !important;
-    }
-    #site-header > .max-w-7xl > .header-row > div.hidden.lg\:flex{
-      gap:.75rem !important;
-    }
-    #site-header #header-phone{
-      font-size:13px !important;
-    }
-    #site-header .btn-primary{
-      font-size:13px !important;
-      padding-left:1rem !important;
-      padding-right:1rem !important;
-      padding-top:.65rem !important;
-      padding-bottom:.65rem !important;
-    }
-    #site-header .site-logo{
-      height:54px !important;
-      max-width:215px !important;
-    }
-  }
+  /* Header sizing is defined in the consolidated responsive layout rules below. */
 
-
-  /* About heading: use the available horizontal space instead of wrapping. */
+  /* About intro: keep the heading inside its grid column and align the copy naturally. */
   @media (min-width:1024px){
     #about h2{
-      white-space:nowrap !important;
-      font-size:2.05rem !important;
-      line-height:1.15 !important;
-      letter-spacing:-0.02em;
+      white-space:normal !important;
+      max-width:100% !important;
+      font-size:clamp(30px, 2.45vw, 38px) !important;
+      line-height:1.16 !important;
+      letter-spacing:-0.025em;
+      overflow-wrap:normal;
+      text-wrap:balance;
     }
     #about .max-w-7xl{
       align-items:start !important;
     }
-  }
-  @media (min-width:1280px){
-    #about h2{
-      font-size:2.25rem !important;
-    }
-  }
-
-
-  /* Prevent the About feature-card block from colliding with the single-line heading. */
-  @media (min-width:1024px){
     #about > .max-w-7xl > .lg\:col-span-7{
-      margin-top:6.5rem !important;
+      margin-top:0 !important;
+      min-width:0;
+    }
+    #about > .max-w-7xl > .lg\:col-span-5{
+      min-width:0;
+      padding-top:.25rem;
     }
   }
 
@@ -539,9 +500,9 @@
   html,body{overflow-x:hidden;width:100%}
   #site-header{width:100%}
   #site-header > .max-w-7xl{width:100%;padding-left:1rem!important;padding-right:1rem!important}
-  #site-header .site-logo{height:50px!important;max-width:185px!important}
+  #site-header .site-logo{height:52px!important;max-width:190px!important}
   section{overflow:hidden}
-  #about h2{white-space:normal!important;font-size:2rem!important;line-height:1.15!important;max-width:100%!important}
+  #about h2{white-space:normal!important;font-size:clamp(26px,6.5vw,34px)!important;line-height:1.15!important;max-width:100%!important}
   #about .lg\\:col-span-7{margin-top:2rem!important}
   h1{font-size:clamp(2rem,9vw,3.25rem)!important;line-height:1.08!important}
   h2{font-size:clamp(1.75rem,7vw,2.5rem)!important;line-height:1.15!important}
@@ -552,16 +513,16 @@
   .btn-primary,.btn-secondary{max-width:100%}
 }
 @media (max-width:767px){
-  #site-header .site-logo{height:44px!important;max-width:165px!important}
-  #about h2{font-size:1.8rem!important}
+  #site-header .site-logo{height:46px!important;max-width:170px!important}
+  #about h2{font-size:clamp(26px,6.5vw,34px)!important}
   .py-24,.py-28,.py-32{padding-top:3.5rem!important;padding-bottom:3.5rem!important}
   .md\\:grid-cols-2,.lg\\:grid-cols-2,.lg\\:grid-cols-3,.lg\\:grid-cols-4{grid-template-columns:1fr!important}
   .max-w-7xl,.max-w-6xl{width:100%;max-width:100%!important;padding-left:1rem;padding-right:1rem}
   .gap-16,.gap-14{gap:2rem!important}
 }
 @media (max-width:420px){
-  #site-header .site-logo{height:40px!important;max-width:150px!important}
-  #about h2{font-size:1.65rem!important}
+  #site-header .site-logo{height:44px!important;max-width:160px!important}
+  #about h2{font-size:clamp(26px,6.5vw,34px)!important}
   .max-w-7xl,.max-w-6xl{padding-left:.85rem;padding-right:.85rem}
 }
 
@@ -588,14 +549,14 @@
     max-width:100% !important;
     overflow-wrap:break-word !important;
     word-break:normal !important;
-    font-size:clamp(1.85rem,8vw,2.5rem) !important;
+    font-size:clamp(32px,8vw,42px) !important;
     line-height:1.12 !important;
   }
 
   #home .hero-copy{
     width:100% !important;
     max-width:100% !important;
-    font-size:15px !important;
+    font-size:16px !important;
     line-height:1.65 !important;
   }
 
@@ -659,10 +620,10 @@
 
 @media (max-width:420px){
   #home .hero-heading{
-    font-size:1.75rem !important;
+    font-size:clamp(30px,8vw,36px) !important;
   }
   #home .hero-copy{
-    font-size:14px !important;
+    font-size:16px !important;
   }
   #home .hero-info-card{
     padding:1.25rem !important;
@@ -792,24 +753,7 @@
 }
 
 
-/* MOBILE ONLY: prevent fixed header from covering hero content */
-@media (max-width:1023px){
-  /* Keep the first hero text completely below the fixed mobile header. */
-  #home{
-    padding-top:10.5rem !important;
-  }
-}
-@media (max-width:767px){
-  #home{
-    padding-top:10rem !important;
-  }
-}
-@media (max-width:420px){
-  #home{
-    padding-top:9.5rem !important;
-  }
-}
-
+/* Legacy mobile padding overrides removed; the scoped responsive layout rules below define header clearance. */
 
 /* FINAL MOBILE HERO POSITION FIX — only affects the first section */
 @media (max-width:1023px){
@@ -888,14 +832,14 @@
 }
 .founder-copy{min-width:0;display:block;align-self:start;color:var(--navy);}
 .founder-copy > *{visibility:visible;opacity:1;}
-.founder-eyebrow{color:var(--red);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;font-weight:700;}
+.founder-eyebrow{color:var(--red);font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;}
 .founder-title{margin-top:6px;color:var(--navy);font-family:'Poppins',sans-serif;font-weight:700;font-size:clamp(1.55rem,2.3vw,2.2rem);line-height:1.15;}
 .founder-name{margin-top:12px;color:var(--navy);font-family:'Poppins',sans-serif;font-weight:700;font-size:20px;}
-.founder-role{margin-top:2px;color:#475569;font-size:13px;font-weight:600;}
-.founder-placeholder-copy{margin-top:14px;color:#334155;font-size:14px;line-height:1.75;max-width:780px;}
+.founder-role{margin-top:2px;color:#475569;font-size:15px;line-height:1.45;font-weight:600;}
+.founder-placeholder-copy{margin-top:14px;color:#334155;font-size:16px;line-height:1.7;max-width:780px;}
 .founder-credentials{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px;}
-.founder-credential{display:inline-flex;align-items:center;padding:7px 10px;border:1px solid #E2E8F0;border-radius:999px;background:#F8FAFC;color:#334155;font-size:11.5px;font-weight:600;line-height:1.2;}
-.founder-quote{margin-top:14px;padding:13px 16px;border-left:3px solid var(--red);background:#FFF7F7;color:#7F1D1D;font-size:13.5px;line-height:1.65;font-style:italic;border-radius:0 10px 10px 0;}
+.founder-credential{display:inline-flex;align-items:center;padding:7px 10px;border:1px solid #E2E8F0;border-radius:999px;background:#F8FAFC;color:#334155;font-size:13px;font-weight:600;line-height:1.3;}
+.founder-quote{margin-top:14px;padding:13px 16px;border-left:3px solid var(--red);background:#FFF7F7;color:#7F1D1D;font-size:15px;line-height:1.65;font-style:italic;border-radius:0 10px 10px 0;}
 /* Founder text lives inside the dark About section, so explicitly preserve strong contrast. */
 #about .founder-copy .founder-eyebrow{color:#C62828 !important;}
 #about .founder-copy .founder-title,#about .founder-copy .founder-name{color:#0F172A !important;}
@@ -905,15 +849,15 @@
 #about .founder-copy .founder-quote{color:#7F1D1D !important;}
 .founder-highlights{grid-column:1/-1;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:0;}
 .founder-highlight{padding:17px 18px;border:1px solid #E2E8F0;border-radius:14px;background:#F8FAFC;}
-.founder-highlight-label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:#64748B;font-weight:700;}
+.founder-highlight-label{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#526176;font-weight:700;}
 .founder-highlight-value{margin-top:5px;color:var(--navy);font-family:'Poppins',sans-serif;font-size:16px;font-weight:700;}
-.founder-highlight-copy{margin-top:4px;color:#64748B;font-size:12.5px;line-height:1.5;}
+.founder-highlight-copy{margin-top:4px;color:#526176;font-size:14px;line-height:1.55;}
 .founder-journey{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:0;margin-top:8px;padding-top:18px;border-top:1px solid #E2E8F0;}
-.journey-item{position:relative;text-align:center;padding:0 12px;color:#64748B;font-size:11.5px;line-height:1.4;}
+.journey-item{position:relative;text-align:center;padding:0 12px;color:#526176;font-size:13px;line-height:1.5;}
 .journey-item:not(:last-child)::after{content:'';position:absolute;top:8px;right:-1px;width:calc(50% - 8px);height:1px;background:#CBD5E1;transform:translateX(50%);}
 .journey-item:not(:first-child)::before{content:'';position:absolute;top:8px;left:-1px;width:calc(50% - 8px);height:1px;background:#CBD5E1;transform:translateX(-50%);}
 .journey-dot{display:block;width:12px;height:12px;border-radius:50%;background:var(--red);margin:0 auto 9px;box-shadow:0 0 0 5px rgba(198,40,40,.09);position:relative;z-index:1;}
-.journey-item strong{display:block;color:var(--navy);font-family:'Poppins',sans-serif;font-size:13px;}
+.journey-item strong{display:block;color:var(--navy);font-family:'Poppins',sans-serif;font-size:14px;}
 .journey-item span:last-child{display:block;margin-top:2px;}
 @media(max-width:1023px){
   .founder-compact{grid-template-columns:220px minmax(0,1fr);gap:22px;padding:22px;}
@@ -958,7 +902,7 @@
 .founder-name{margin-top:9px;font-size:19px;}
 .founder-placeholder-copy{margin-top:11px;font-size:13.5px;line-height:1.65;}
 .founder-credentials{margin-top:10px;gap:7px;}
-.founder-credential{padding:6px 9px;font-size:11px;}
+.founder-credential{padding:6px 9px;font-size:12px;}
 .founder-quote{margin-top:11px;padding:11px 14px;font-size:13px;line-height:1.55;}
 .founder-highlights{gap:12px;margin-top:2px;}
 .founder-highlight{padding:14px 16px;}
@@ -1013,8 +957,8 @@
   background:#F8FAFC;
 }
 .founder-profile-mini-title{
-  color:#64748B;
-  font-size:10px;
+  color:#526176;
+  font-size:12px;
   font-weight:800;
   letter-spacing:.11em;
   text-transform:uppercase;
@@ -1025,8 +969,8 @@
   align-items:center;
   gap:8px;
   color:#334155;
-  font-size:11.5px;
-  line-height:1.45;
+  font-size:13px;
+  line-height:1.5;
   margin-top:5px;
 }
 .founder-profile-mini-line span{
@@ -1102,10 +1046,10 @@
   box-sizing:border-box;
   text-align:center;
   color:#64748B;
-  font-size:12px;
-  line-height:1.4;
+  font-size:13px;
+  line-height:1.45;
   font-weight:600;
-  white-space:nowrap;
+  white-space:normal;
   overflow:visible;
   overflow-wrap:normal;
   word-break:normal;
@@ -1182,7 +1126,7 @@
 }
 .founder-highlight{padding:15px 17px;border-radius:14px;}
 .founder-highlight-value{font-size:16px;}
-.founder-highlight-copy{font-size:12.5px;}
+.founder-highlight-copy{font-size:14px;}
 .founder-journey{
   grid-area:journey;
   margin-top:18px;
@@ -1257,7 +1201,7 @@
   .founder-name{margin-top:10px;font-size:18px;}
   .founder-placeholder-copy{font-size:13px;line-height:1.62;}
   .founder-credentials{gap:6px;}
-  .founder-credential{font-size:10.5px;padding:5px 8px;}
+  .founder-credential{font-size:12px;padding:5px 8px;}
   .founder-quote{font-size:12.5px;margin-top:10px;padding:10px 12px;}
   .founder-highlights{
     grid-template-columns:1fr 1fr;
@@ -1266,7 +1210,7 @@
   }
   .founder-highlight{padding:13px 14px;}
   .founder-highlight-value{font-size:14px;}
-  .founder-highlight-copy{font-size:11.5px;}
+  .founder-highlight-copy{font-size:13px;}
   .founder-journey{
     grid-template-columns:1fr 1fr;
     gap:18px 0;
@@ -1296,20 +1240,20 @@
   .hero-photo-label{position:absolute;z-index:2;left:22px;bottom:22px;color:#fff;display:flex;flex-direction:column;gap:5px;}
   .hero-photo-label strong{font:700 20px Poppins,sans-serif;}
   .hero-photo-label small{font-size:13px;color:rgba(255,255,255,.86);}
-  .hero-photo-chip{position:absolute;z-index:2;left:12px;bottom:12px;padding:7px 10px;border-radius:9px;background:rgba(255,255,255,.94);color:#0f172a;font-size:11px;font-weight:800;}
+  .hero-photo-chip{position:absolute;z-index:2;left:12px;bottom:12px;padding:7px 10px;border-radius:9px;background:rgba(255,255,255,.94);color:#0f172a;font-size:13px;font-weight:800;}
   .hero-visual-note{position:absolute;right:-8px;bottom:0;z-index:3;display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #e2e8f0;border-radius:15px;padding:12px 15px;box-shadow:0 16px 40px -25px rgba(15,23,42,.45);}
   .hero-note-icon{width:34px;height:34px;display:grid;place-items:center;border-radius:10px;background:#fff1f0;color:var(--red);font-size:19px;}
-  .hero-visual-note strong,.hero-visual-note small{display:block;}.hero-visual-note strong{font-size:12px;color:var(--navy);}.hero-visual-note small{font-size:11px;color:#64748b;margin-top:2px;}.hero-visual-note>a{font-size:18px;color:var(--red);padding:5px;}
+  .hero-visual-note strong,.hero-visual-note small{display:block;}.hero-visual-note strong{font-size:14px;color:var(--navy);}.hero-visual-note small{font-size:13px;color:#526176;margin-top:2px;}.hero-visual-note>a{font-size:18px;color:var(--red);padding:5px;}
   .home-category-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid #e2e8f0;border-radius:18px;background:#fff;overflow:hidden;box-shadow:0 15px 40px -36px rgba(15,23,42,.5);}
   .home-category-strip>a{display:flex;align-items:center;gap:12px;padding:17px 18px;min-width:0;border-right:1px solid #e2e8f0;transition:background .2s ease;}.home-category-strip>a:last-child{border-right:0;}.home-category-strip>a:hover{background:#fff7f7;}
-  .category-symbol{display:grid;place-items:center;width:40px;height:40px;flex:0 0 40px;border-radius:12px;background:#f1f5f9;color:var(--red);font-size:22px;}.home-category-strip strong,.home-category-strip small{display:block;}.home-category-strip strong{font-size:12px;color:var(--navy);}.home-category-strip small{font-size:10px;color:#64748b;margin-top:3px;}.home-category-strip b{margin-left:auto;color:#94a3b8;}
+  .category-symbol{display:grid;place-items:center;width:40px;height:40px;flex:0 0 40px;border-radius:12px;background:#f1f5f9;color:var(--red);font-size:22px;}.home-category-strip strong,.home-category-strip small{display:block;}.home-category-strip strong{font-size:14px;line-height:1.35;color:var(--navy);}.home-category-strip small{font-size:12px;line-height:1.4;color:#526176;margin-top:3px;}.home-category-strip b{margin-left:auto;color:#94a3b8;}
   .visual-about{color:var(--ink);}.about-photo-story{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:15px;}
   .about-story-image{height:280px;position:relative;overflow:hidden;border-radius:18px;background:#dbe3eb;isolation:isolate;}.about-story-large{height:310px;}.about-story-image::after{content:"";position:absolute;inset:25% 0 0;background:linear-gradient(0deg,rgba(15,23,42,.75),transparent);pointer-events:none;}
-  .about-image-caption{position:absolute;z-index:2;left:17px;right:14px;bottom:16px;color:#fff;display:flex;align-items:center;gap:10px;}.about-image-caption span{font-size:11px;color:#ffb5ab;font-weight:800;letter-spacing:.1em;}.about-image-caption strong{font:600 14px Poppins,sans-serif;}
-  .about-promise-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;}.about-promise-grid>div{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #e2e8f0;border-radius:15px;padding:16px;}.promise-icon{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border-radius:11px;background:#fff0ef;color:var(--red);font-weight:800;}.about-promise-grid strong,.about-promise-grid small{display:block;}.about-promise-grid strong{font-size:12px;color:var(--navy);}.about-promise-grid small{font-size:11px;line-height:1.45;color:#64748b;margin-top:4px;}
+  .about-image-caption{position:absolute;z-index:2;left:17px;right:14px;bottom:16px;color:#fff;display:flex;align-items:center;gap:10px;}.about-image-caption span{font-size:12px;color:#ffb5ab;font-weight:800;letter-spacing:.08em;}.about-image-caption strong{font:600 16px Poppins,sans-serif;}
+  .about-promise-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;}.about-promise-grid>div{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid #e2e8f0;border-radius:15px;padding:16px;}.promise-icon{display:grid;place-items:center;flex:0 0 36px;width:36px;height:36px;border-radius:11px;background:#fff0ef;color:var(--red);font-weight:800;}.about-promise-grid strong,.about-promise-grid small{display:block;}.about-promise-grid strong{font-size:15px;line-height:1.35;color:var(--navy);}.about-promise-grid small{font-size:14px;line-height:1.5;color:#526176;margin-top:4px;}
   .store-visit-banner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:27px 30px;border-radius:20px;background:var(--navy);color:#fff;}.store-visit-banner .eyebrow{color:#ff9386;}.store-visit-banner h3{color:#fff;}.store-visit-banner p{color:#cbd5e1;}.store-whatsapp{background:#fff;color:var(--navy);transition:transform .2s ease,background .2s ease;}.store-whatsapp:hover{transform:translateY(-2px);background:#f1f5f9;}
   @media(max-width:900px){.hero-photo-grid{grid-template-rows:190px 170px;}.hero-photo-main{min-height:370px;}.home-category-strip{grid-template-columns:repeat(2,minmax(0,1fr));}.home-category-strip>a:nth-child(2){border-right:0;}.home-category-strip>a:nth-child(-n+2){border-bottom:1px solid #e2e8f0;}.about-photo-story{grid-template-columns:1fr 1fr;}.about-story-large{grid-column:1/-1;height:300px;}.about-story-image{height:230px;}.about-promise-grid{grid-template-columns:1fr;}.store-visit-banner{align-items:flex-start;flex-direction:column;}}
-  @media(max-width:560px){.hero-photo-grid{grid-template-columns:1fr 1fr;grid-template-rows:240px 135px;gap:9px;padding:0 0 25px;}.hero-photo-main{grid-column:1/-1;grid-row:auto;min-height:0;}.hero-photo-small{height:135px;}.hero-photo-label{left:17px;bottom:17px;}.hero-photo-label strong{font-size:17px;}.hero-visual-note{right:5px;bottom:0;padding:10px 12px;}.home-category-strip>a{padding:13px 10px;gap:8px;}.category-symbol{width:33px;height:33px;flex-basis:33px;}.home-category-strip strong{font-size:11px;}.home-category-strip small{font-size:9px;}.home-category-strip b{display:none;}.about-photo-story{grid-template-columns:1fr 1fr;gap:9px;}.about-story-large{height:240px;}.about-story-image{height:165px;}.about-image-caption{left:10px;bottom:10px;gap:6px;align-items:flex-start;}.about-image-caption strong{font-size:11px;line-height:1.3;}.store-visit-banner{padding:22px 18px;}.store-visit-banner>div:last-child{width:100%;}.store-visit-banner a{flex:1;font-size:12px;padding:12px 10px;}}
+  @media(max-width:560px){.hero-photo-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-rows:240px 135px;gap:9px;padding:0;}.hero-photo-main{grid-column:1/-1;grid-row:auto;min-height:0;}.hero-photo-small{height:135px;min-width:0;}.hero-photo-label{left:17px;bottom:17px;}.hero-photo-label strong{font-size:17px;}.hero-visual-note{position:relative;inset:auto;width:100%;max-width:100%;margin:12px 0 0;padding:10px 12px;box-sizing:border-box;}.home-category-strip>a{padding:13px 10px;gap:8px;}.category-symbol{width:33px;height:33px;flex-basis:33px;}.home-category-strip strong{font-size:13px;line-height:1.35;}.home-category-strip small{font-size:12px;line-height:1.4;}.home-category-strip b{display:none;}.about-photo-story{grid-template-columns:1fr 1fr;gap:9px;}.about-story-large{height:240px;}.about-story-image{height:165px;}.about-image-caption{left:10px;bottom:10px;gap:6px;align-items:flex-start;}.about-image-caption strong{font-size:13px;line-height:1.3;}.store-visit-banner{padding:22px 18px;}.store-visit-banner>div:last-child{width:100%;}.store-visit-banner a{flex:1;font-size:14px;padding:12px 10px;}}
   @media(prefers-reduced-motion:reduce){.hero-photo img,.about-story-image img,.home-category-strip>a,.store-whatsapp{transition:none;}}
 
 
@@ -1339,14 +1283,31 @@
   #site-header { min-height: var(--site-header-height); }
   #site-header > div:first-child { padding-left: max(var(--content-gutter), env(safe-area-inset-left)); padding-right: max(var(--content-gutter), env(safe-area-inset-right)); }
   #site-header .header-row { min-height: var(--site-header-height); height: var(--site-header-height); }
-  #site-header .site-logo { display: block; width: auto; max-width: min(12rem, 48vw); max-height: 3rem; object-fit: contain; }
+  @media (min-width: 1024px) {
+    :root { --site-header-height: 5rem; }
+    #site-header #desktop-nav { gap: .75rem; }
+    #site-header #desktop-nav .nav-link { font-size: 15px; white-space: nowrap; }
+    #site-header #header-phone { font-size: 16px; font-weight: 600; white-space: nowrap; }
+    #site-header .btn-primary { font-size: 15px; font-weight: 700; white-space: nowrap; padding: .65rem .85rem; }
+    #site-header .site-logo { max-width: min(13rem, 24vw); max-height: 3.25rem; }
+  }
+  @media (min-width: 1280px) {
+    #site-header #desktop-nav { gap: .9rem; }
+    #site-header #desktop-nav .nav-link { font-size: 16px; }
+    #site-header #header-phone { font-size: 17px; }
+    #site-header .btn-primary { font-size: 16px; padding-inline: 1rem; }
+    #site-header .site-logo { max-width: 14rem; max-height: 3.5rem; }
+  }
+  #site-header .site-logo { display: block; width: auto; max-width: min(14rem, 48vw); max-height: 3.5rem; object-fit: contain; }
+  #home #home-brand-identifier { gap: .65rem; margin-bottom: 1.25rem !important; font-size: 18px !important; line-height: 1.4; letter-spacing: .075em; font-weight: 600; overflow-wrap: normal; }
+  #home-brand-identifier .tri-bullet { flex: 0 0 auto; }
   #mobile-menu-btn { min-width: 44px; min-height: 44px; color: var(--navy); border: 1px solid #e2e8f0; background: #fff; }
   #mobile-nav { max-height: calc(100dvh - var(--site-header-height)); overflow-y: auto; padding-bottom: max(1rem, env(safe-area-inset-bottom)); }
   #mobile-nav a { min-height: 44px; display: flex; align-items: center; }
   #mobile-nav .btn-primary { justify-content: center; }
   #desktop-nav a, #header-phone { color: var(--navy) !important; }
   #home { padding-top: calc(var(--site-header-height) + 1.5rem); padding-bottom: clamp(2.75rem, 6vw, 5rem); }
-  #home .hero-heading { max-width: 12ch; font-size: clamp(2.1rem, 5vw, 4rem); line-height: 1.08; letter-spacing: -.04em; text-wrap: balance; }
+  #home .hero-heading { max-width: 12ch; font-size: clamp(40px, 5vw, 68px); line-height: 1.08; letter-spacing: -.04em; text-wrap: balance; }
   #home .hero-copy { max-width: 38rem; line-height: 1.7; }
   #home .btn-primary, #home a[href*="google.com/maps"] { min-height: 46px; }
   #home .hero-photo img, #about .about-story-image img, #about .about-story-large img { display: block; width: 100%; height: 100%; object-fit: cover; }
@@ -1358,11 +1319,13 @@
   #brands .section-flag { max-width: 100%; }
   #brands .section-title { line-height: 1.35; letter-spacing: 0; }
   #brands .section-sub { margin-top: .5rem; }
+  #brands > .max-w-7xl p.text-\[15px\] { font-size: 16px; line-height: 1.6; }
   #services .mt-14 { margin-top: clamp(1.5rem, 4vw, 3rem); }
   #featured-products .product-section-intro { min-width: 0; max-width: 52rem; }
-  #featured-products h2, #contact h2, #services h2, #brands h2, #about h2 { line-height: 1.2; text-wrap: balance; }
+  #featured-products h2, #contact h2, #services h2, #brands h2, #about h2 { font-size: clamp(32px, 3vw, 42px); line-height: 1.2; text-wrap: balance; }
   #featured-products .product-tabs-scroll { max-width: 100%; overflow-x: auto; overscroll-behavior-x: contain; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
   #featured-products .product-tabs-scroll > * { flex-shrink: 0; }
+  #featured-products .text-sm { font-size: 14px; }
   #featured-grid { min-width: 0; max-width: 100%; overscroll-behavior-x: contain; }
   #featured-grid img { max-width: 100%; }
   #featured-products .product-carousel-btn { min-width: 44px; min-height: 44px; }
@@ -1378,7 +1341,8 @@
   }
   @media (max-width: 1023px) {
     #site-header .header-row { gap: .75rem; }
-    #site-header .site-logo { max-height: 2.75rem; }
+    #site-header .site-logo { max-width: min(12rem, 52vw); max-height: 3rem; }
+    #home #home-brand-identifier { font-size: 15px !important; letter-spacing: .06em; }
     #home > div:first-child { align-items: start; gap: 2rem; }
     #home .hero-heading { max-width: 14ch; }
     #about, #about.visual-about { padding-block: clamp(3.5rem, 8vw, 5rem); }
@@ -1387,18 +1351,19 @@
   @media (max-width: 767px) {
     :root { --content-gutter: 1.125rem; --section-space: 3.75rem; }
     #site-header .header-row { gap: .5rem; }
-    #site-header .site-logo { max-width: min(10.5rem, 54vw); max-height: 2.5rem; }
+    #site-header .site-logo { max-width: min(11rem, 56vw); max-height: 2.75rem; }
+    #home #home-brand-identifier { max-width: 100%; align-items: flex-start; font-size: 14px !important; line-height: 1.45; letter-spacing: .045em; margin-bottom: 1rem !important; }
     #home { padding-top: calc(var(--site-header-height) + 1.25rem); }
     #home > div:first-child { gap: 1.5rem; }
     #home > div:first-child > div:first-child { padding-top: 0; }
-    #home .eyebrow { font-size: .7rem; letter-spacing: .12em; margin-bottom: 1rem; }
-    #home .hero-heading { max-width: 100%; font-size: clamp(2rem, 8.4vw, 3rem); line-height: 1.08; }
-    #home .hero-copy { margin-top: 1rem; font-size: 1rem; line-height: 1.65; }
+    #home .eyebrow { font-size: 12px; letter-spacing: .12em; margin-bottom: 1rem; }
+    #home .hero-heading { max-width: 100%; font-size: clamp(32px, 8.4vw, 46px); line-height: 1.08; }
+    #home .hero-copy { margin-top: 1rem; font-size: 16px; line-height: 1.65; }
     #home .hero-actions, #home .mt-7.flex.flex-wrap { gap: .625rem; }
     #home .mt-7.flex.flex-wrap > a { flex: 1 1 10rem; justify-content: center; padding: .8rem .9rem; text-align: center; }
     #home .hero-photo-grid { gap: .625rem; }
-    #home .hero-visual-note { max-width: 70%; }
-    #home .home-category-strip { margin-top: 1.25rem; }
+    #home .hero-visual-note { max-width: 100%; }
+    #home .home-category-strip { margin-top: 0; }
     #about .about-photo-story { gap: .625rem; }
     #about .about-story-large { grid-column: 1 / -1; }
     #about .about-promise-grid { gap: .75rem; }
@@ -1407,8 +1372,8 @@
     #brands .mt-16 { margin-top: 2.5rem; }
     #brands .grid { gap: .875rem; }
     #brands .section-flag { padding: .45rem .7rem; }
-    #brands .section-title { font-size: clamp(.95rem, 3.8vw, 1.2rem); }
-    #brands h2, #services h2, #featured-products h2, #contact h2, #about h2 { font-size: clamp(1.65rem, 6.5vw, 2.25rem); }
+    #brands .section-title { font-size: clamp(18px, 3.8vw, 20px); }
+    #brands h2, #services h2, #featured-products h2, #contact h2, #about h2 { font-size: clamp(26px, 6.5vw, 34px); }
     #featured-products .reveal.flex.items-end { align-items: flex-start; }
     #featured-products .product-section-intro { width: 100%; }
     #featured-products .product-tabs-wrap { margin-top: 1.5rem; }
@@ -1418,6 +1383,9 @@
     #featured-products .product-help-btn { justify-content: center; text-align: center; }
     #contact .max-w-7xl { grid-template-columns: minmax(0, 1fr); }
     #contact .space-y-6 { gap: 1.25rem; }
+    #contact label { font-size: 15px; line-height: 1.45; }
+    #contact .text-\[13px\] { font-size: 14px; }
+    #contact .text-\[13\.5px\] { font-size: 15px; }
     #contact form, #contact input, #contact textarea, #contact select { max-width: 100%; }
     .store-visit-banner { gap: 1rem; }
     .store-visit-banner > div:last-child { display: flex; flex-wrap: wrap; gap: .625rem; }
@@ -1425,7 +1393,7 @@
   }
   @media (max-width: 430px) {
     :root { --content-gutter: 1rem; }
-    #home .hero-heading { font-size: clamp(1.9rem, 8.1vw, 2.35rem); }
+    #home .hero-heading { font-size: clamp(30px, 8.1vw, 38px); }
     #home .hero-photo-grid { grid-template-rows: minmax(190px, 57vw) 125px; }
     #home .hero-photo-small { height: 125px; }
     #home .hero-photo-label strong { font-size: .95rem; }
@@ -1439,8 +1407,8 @@
     #contact .flex.gap-4 { gap: .75rem; }
   }
   @media (max-width: 359px) {
-    #site-header .site-logo { max-width: 9rem; }
-    #home .hero-heading { font-size: 1.8rem; }
+    #site-header .site-logo { max-width: min(10rem, 56vw); max-height: 2.65rem; }
+    #home .hero-heading { font-size: clamp(30px, 8vw, 36px); }
     #home .mt-7.flex.flex-wrap > a { flex-basis: 100%; }
     #home .hero-photo-grid { grid-template-rows: 185px 112px; }
     #home .hero-photo-small { height: 112px; }
@@ -1465,7 +1433,7 @@
 }
 #home .hero-copy {
   max-width: 40rem; color: #475569 !important;
-  font-size: clamp(1rem, 1.35vw, 1.125rem); line-height: 1.7; text-wrap: pretty;
+  font-size: clamp(17px, 1.35vw, 20px); line-height: 1.6; text-wrap: pretty;
 }
 #home .hero-visual, #home .hero-photo-grid { min-width: 0; }
 #home .hero-photo img, #about .about-story-image img {
@@ -1482,7 +1450,7 @@
   text-wrap: balance; overflow-wrap: normal;
 }
 #about .about-visual-head p {
-  margin: 0; color: #526176 !important; font-size: clamp(.98rem, 1.2vw, 1.08rem); line-height: 1.7;
+  margin: 0; color: #526176 !important; font-size: clamp(16px, 1.2vw, 18px); line-height: 1.7;
 }
 #about .about-visual-head .about-expert-cta {
   display: inline-flex; align-items: center; min-height: 44px; margin-top: 1.125rem;
@@ -1507,9 +1475,9 @@
 @media (max-width: 767px) {
   #home { padding-top: calc(var(--site-header-height, 4.25rem) + 1.25rem); }
   #home .hero-heading { max-width: 100%; font-size: clamp(2rem, 8.1vw, 2.8rem); line-height: 1.1; }
-  #home .hero-copy { font-size: 1rem; line-height: 1.65; }
+  #home .hero-copy { font-size: 16px; line-height: 1.65; }
   #home .hero-visual-note {
-    width: 100%; max-width: 100%; margin: .75rem 0 0; justify-content: flex-start; border-radius: 13px;
+    position: relative; right: auto; bottom: auto; width: 100%; max-width: 100%; margin: .75rem 0 0; justify-content: flex-start; border-radius: 13px; box-sizing: border-box;
   }
   #about, #about.visual-about { padding-block: clamp(3rem, 10vw, 4rem); }
   #about .about-visual-head { display: grid; grid-template-columns: minmax(0,1fr); gap: 1rem; }
@@ -1551,8 +1519,47 @@
   #home .hero-photo-lighting img { object-position: center 44%; }
   #home .hero-photo-interior img { object-position: center 50%; }
 </style>
-
-</head>
+<style id="ag-electric-hero-sectors">
+  /* Hero-only sector information; does not style other website sections. */
+  #home .hero-sector-group { max-width: 43rem; margin: 1.25rem 0 0; min-width: 0; }
+  #home .hero-sector-eyebrow {
+    margin: 0 0 .45rem; color: var(--red, #c92332); font-size: 14px;
+    font-weight: 750; line-height: 1.45; letter-spacing: .095em; text-transform: uppercase;
+  }
+  #home .hero-sector-intro {
+    margin: 0 0 .35rem; color: var(--navy, #10233f);
+    font-size: clamp(22px, 1.8vw, 26px); font-weight: 750; line-height: 1.35;
+  }
+  #home .hero-sector-support {
+    margin: 0; color: #526176; font-size: 18px; line-height: 1.6;
+    max-width: 41rem; text-wrap: pretty;
+  }
+  #home .hero-sector-tags {
+    display: flex; flex-wrap: wrap; align-items: center; gap: .5rem;
+    list-style: none; padding: 0; margin: .85rem 0 0; min-width: 0;
+  }
+  #home .hero-sector-tag {
+    display: inline-flex; align-items: center; gap: .38rem; min-height: 34px;
+    max-width: 100%; padding: .42rem .7rem; border: 1px solid rgba(16,35,63,.12);
+    border-radius: 999px; background: rgba(255,255,255,.78); color: var(--navy, #10233f);
+    font-size: 15px; font-weight: 600; line-height: 1.25; overflow-wrap: anywhere; box-sizing: border-box;
+  }
+  #home .hero-sector-icon {
+    flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center;
+    width: 1rem; color: var(--red, #c92332); font-size: 15px; line-height: 1;
+  }
+  #home .hero-sector-label { min-width: 0; }
+  @media (max-width: 767px) {
+    #home .hero-sector-group { margin-top: 1rem; }
+    #home .hero-sector-eyebrow { font-size: 12px; letter-spacing: .075em; }
+    #home .hero-sector-support { font-size: 16px; line-height: 1.6; }
+    #home .hero-sector-tags { gap: .45rem; margin-top: .75rem; }
+    #home .hero-sector-tag { min-height: 38px; padding: .45rem .68rem; font-size: 14px; }
+  }
+  @media (max-width: 359px) {
+    #home .hero-sector-tag { font-size: 13px; padding-inline: .55rem; }
+  }
+</style></head>
 <body class="bg-white antialiased">
 <!-- ============ HEADER ============ -->
 <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="site-header" style="background:#FFFFFF; box-shadow:0 1px 0 rgba(15,23,42,.08);">
@@ -1595,9 +1602,9 @@
 <section class="relative overflow-hidden bg-white pt-28 pb-14 lg:pt-32 lg:pb-20" id="home">
 <div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
 <div class="relative z-10 py-3">
-<div class="eyebrow flex items-center gap-2 mb-5" style="color:var(--red);"><span class="tri-bullet"></span> AG Electric &amp; Automation · Meerut</div>
+<div id="home-brand-identifier" class="eyebrow flex items-center gap-2 mb-5" style="color:var(--red);"><span class="tri-bullet"></span> AG Electric &amp; Automation · Meerut</div>
 <h1 class="hero-heading font-display font-bold text-4xl sm:text-5xl lg:text-6xl leading-[1.06] tracking-tight" style="color:var(--navy);">Powering Every Space.<br/><span style="color:var(--red);">Guiding Every Project.</span></h1>
-<p class="hero-copy mt-5 max-w-lg text-base sm:text-lg leading-relaxed" style="color:#526176;">Explore quality electrical products, lighting, fans and automation solutions for homes, businesses and projects—with expert guidance from your trusted local partner in Meerut.</p>
+<p class="hero-copy mt-5 max-w-lg text-base sm:text-lg leading-relaxed" style="color:#526176;">Explore quality electrical products, lighting, fans and automation solutions for homes, businesses and projects—with expert guidance from your trusted local partner in Meerut.</p><div aria-label="Industries and sectors served" class="hero-sector-group"><p class="hero-sector-eyebrow">SERVING RESIDENTIAL, COMMERCIAL &amp; INDUSTRIAL NEEDS</p><p class="hero-sector-intro">Electrical Solutions for Every Sector</p><p class="hero-sector-support">From modern homes and commercial spaces to industrial facilities and infrastructure projects, we help customers find the right electrical products, lighting, and automation solutions.</p><ul aria-label="Sectors served" class="hero-sector-tags"><li class="hero-sector-tag"><span aria-hidden="true" class="hero-sector-icon">⌂</span><span class="hero-sector-label">Residential</span></li><li class="hero-sector-tag"><span aria-hidden="true" class="hero-sector-icon">▥</span><span class="hero-sector-label">Commercial</span></li><li class="hero-sector-tag"><span aria-hidden="true" class="hero-sector-icon">▦</span><span class="hero-sector-label">Industrial</span></li><li class="hero-sector-tag"><span aria-hidden="true" class="hero-sector-icon">⌁</span><span class="hero-sector-label">Infrastructure &amp; Projects</span></li><li class="hero-sector-tag"><span aria-hidden="true" class="hero-sector-icon">✧</span><span class="hero-sector-label">Lighting &amp; Interiors</span></li><li class="hero-sector-tag"><span aria-hidden="true" class="hero-sector-icon">⚙</span><span class="hero-sector-label">Smart Homes &amp; Automation</span></li></ul></div>
 <div class="mt-7 flex flex-wrap gap-3">
 <a class="btn-primary inline-flex items-center gap-2 text-white font-semibold px-5 py-3.5 rounded-xl" href="#featured-products">Explore Products <span aria-hidden="true">↗</span></a>
 <a class="inline-flex items-center gap-2 border border-slate-300 text-slate-800 font-semibold px-5 py-3.5 rounded-xl hover:border-red-700 hover:text-red-700" href="https://www.google.com/maps/dir/?api=1&amp;destination=116%2F4%20Durga%20Nagar%2C%20Kailashpuri%2C%20Garh%20Rd%2C%20Nauchandi%2C%20Meerut%2C%20Uttar%20Pradesh%20250002" rel="noopener" target="_blank">Visit Our Store <span aria-hidden="true">↗</span></a>
@@ -1613,14 +1620,15 @@
 </div>
 <div aria-label="Electrical product categories" class="hero-visual relative">
 <div class="hero-photo-grid">
-<a class="hero-photo hero-photo-main group" href="#featured-products"><img fetchpriority="high" loading="eager" alt="Modern living room with layered architectural and decorative lighting" decoding="async" src="https://images.pexels.com/photos/34377945/pexels-photo-34377945/free-photo-of-modern-living-room-with-elegant-lighting.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400"/ onerror="if(!this.dataset.heroFallback){this.dataset.heroFallback='1';this.src='https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1100&q=85';}else{this.onerror=null;this.style.display='none';}"><span class="hero-photo-label"><strong>Electrical solutions</strong><small>For every kind of project</small></span></a>
-<a class="hero-photo hero-photo-small hero-photo-lighting" href="#featured-products"><img loading="lazy" alt="Modern interior with sculptural pendant lighting and warm illumination" decoding="async" src="https://images.pexels.com/photos/31737855/pexels-photo-31737855/free-photo-of-modern-living-room-with-elegant-lighting-design.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"/ onerror="if(!this.dataset.heroFallback){this.dataset.heroFallback='1';this.src='https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=700&q=82';}else{this.onerror=null;this.style.display='none';}"><span class="hero-photo-chip">Lighting</span></a>
-<a class="hero-photo hero-photo-small hero-photo-interior" href="#featured-products"><img loading="lazy" alt="Close-up of a contemporary electrical wall switch and outlet" decoding="async" src="https://images.unsplash.com/photo-1761479373576-ad4c1c5bb9af?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/ onerror="if(!this.dataset.heroFallback){this.dataset.heroFallback='1';this.src='https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&fit=crop&w=700&q=82';}else{this.onerror=null;this.style.display='none';}"><span class="hero-photo-chip">Home solutions</span></a>
+<a class="hero-photo hero-photo-main group" href="#featured-products"><img alt="Modern living room with layered architectural and decorative lighting" decoding="async" fetchpriority="high" loading="eager" onerror="if(!this.dataset.heroFallback){this.dataset.heroFallback='1';this.src='https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&amp;fit=crop&amp;w=1100&amp;q=85';}else{this.onerror=null;this.style.display='none';}" src="https://images.pexels.com/photos/34377945/pexels-photo-34377945.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400"/><span class="hero-photo-label"><strong>Electrical solutions</strong><small>For every kind of project</small></span></a>
+<a class="hero-photo hero-photo-small hero-photo-lighting" href="#featured-products"><img alt="Modern interior with sculptural pendant lighting and warm illumination" decoding="async" loading="lazy" onerror="if(!this.dataset.heroFallback){this.dataset.heroFallback='1';this.src='https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&amp;fit=crop&amp;w=700&amp;q=82';}else{this.onerror=null;this.style.display='none';}" src="https://images.pexels.com/photos/31737855/pexels-photo-31737855.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=900"/><span class="hero-photo-chip">Lighting</span></a>
+<a class="hero-photo hero-photo-small hero-photo-interior" href="#featured-products"><img alt="Close-up of a contemporary electrical wall switch and outlet" decoding="async" loading="lazy" onerror="if(!this.dataset.heroFallback){this.dataset.heroFallback='1';this.src='https://images.unsplash.com/photo-1558008258-3256797b43f3?auto=format&amp;fit=crop&amp;w=700&amp;q=82';}else{this.onerror=null;this.style.display='none';}" src="https://images.unsplash.com/photo-1761479373576-ad4c1c5bb9af?auto=format&amp;fit=crop&amp;w=900&amp;q=85"/><span class="hero-photo-chip">Home solutions</span></a>
+
+</div>
 <div class="hero-visual-note"><span class="hero-note-icon">✦</span><span><strong>Need help choosing?</strong><small>Talk to our team</small></span><a aria-label="Ask AG Electric on WhatsApp" href="https://wa.me/917830553388" rel="noopener" target="_blank">↗</a></div>
 </div>
 </div>
-</div>
-<div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 mt-12 lg:mt-16">
+<div class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 mt-3 lg:mt-16">
 <div class="home-category-strip">
 <a href="#featured-products"><span class="category-symbol">⌁</span><span><strong>Switches &amp; sockets</strong><small>Finishing touches</small></span><b>↗</b></a>
 <a href="#featured-products"><span class="category-symbol">☼</span><span><strong>Lighting &amp; fans</strong><small>Comfort and ambience</small></span><b>↗</b></a>
@@ -1646,9 +1654,9 @@
 <div class="lg:col-span-5"><p class="text-base leading-relaxed" style="color:#526176;">From everyday electrical essentials to industrial automation, we help customers find the right products for their spaces and projects.</p><a class="inline-flex items-center gap-2 mt-4 font-bold text-sm about-expert-cta" href="#contact" style="color:var(--red);">Get expert assistance <span aria-hidden="true">↗</span></a></div>
 </div>
 <div class="about-photo-story mt-9">
-<div class="about-story-image about-story-large"><img alt="Electrician working on an electrical installation for a real-world project" decoding="async" height="800" loading="eager" onerror="if(!this.dataset.fallbackTried){this.dataset.fallbackTried='1';this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80';}else{this.onerror=null;this.style.display='block';this.style.objectFit='cover';this.parentElement.style.background='linear-gradient(135deg,#1e293b,#475569)';}" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" width="1200"/><div class="about-image-caption"><span>01</span><strong>Built for real-world projects</strong></div></div>
-<div class="about-story-image"><img alt="Electrical and technical equipment detail" decoding="async" height="600" loading="lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&amp;fit=crop&amp;w=800&amp;q=82" width="800"/><div class="about-image-caption"><span>02</span><strong>Products that power work</strong></div></div>
-<div class="about-story-image"><img alt="Modern commercial workspace with practical lighting" decoding="async" height="600" loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=800&amp;q=82" width="800"/><div class="about-image-caption"><span>03</span><strong>Solutions for every space</strong></div></div>
+<div class="about-story-image about-story-large"><img alt="Electrician working on an electrical installation for a real-world project" decoding="async" height="800" loading="eager" onerror="if(!this.dataset.fallbackTried){this.dataset.fallbackTried='1';this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80';}else{this.onerror=null;this.style.display='block';this.style.objectFit='cover';this.parentElement.style.background='linear-gradient(135deg,#1e293b,#475569)';}" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&amp;fit=crop&amp;w=1200&amp;q=85" width="1200"><div class="about-image-caption"><span>01</span><strong>Built for real-world projects</strong></div></img></div>
+<div class="about-story-image"><img alt="Electrical and technical equipment detail" decoding="async" height="600" loading="lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&amp;fit=crop&amp;w=800&amp;q=82" width="800"><div class="about-image-caption"><span>02</span><strong>Products that power work</strong></div></img></div>
+<div class="about-story-image"><img alt="Modern commercial workspace with practical lighting" decoding="async" height="600" loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&amp;fit=crop&amp;w=800&amp;q=82" width="800"><div class="about-image-caption"><span>03</span><strong>Solutions for every space</strong></div></img></div>
 </div>
 <div class="about-promise-grid mt-6">
 <div><span class="promise-icon">✓</span><span><strong>Genuine product sourcing</strong><small>From established manufacturer channels</small></span></div>
